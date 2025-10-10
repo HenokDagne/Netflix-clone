@@ -2,23 +2,23 @@
   {
     "id": 1,
     "title": "Dune: Part Two",
-    "posterUrl": "https://image.tmdb.org/t/p/original/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg",
     "releaseDate": "2024-03-01",
-    "rating": 8.4,
+    "rating": 8.5,
     "genres": ["Science Fiction", "Adventure", "Drama"]
   },
   {
     "id": 2,
     "title": "Inside Out 2",
-    "posterUrl": "https://image.tmdb.org/t/p/original/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
     "releaseDate": "2024-06-14",
-    "rating": 7.5,
+    "rating": 7.7,
     "genres": ["Animation", "Family", "Adventure", "Comedy"]
   },
   {
     "id": 3,
     "title": "Wicked",
-    "posterUrl": "https://image.tmdb.org/t/p/original/c5Tqxeo1UpBvnAc3csUm7j3hlQl.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/c5Tqxeo1UpBvnAc3csUm7j3hlQl.jpg",
     "releaseDate": "2024-11-22",
     "rating": 7.8,
     "genres": ["Musical", "Fantasy", "Romance"]
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "title": "The Brutalist",
-    "posterUrl": "https://image.tmdb.org/t/p/original/qKnqAuLAq1jDwSxdKWVQMZAYKrK.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/qKnqAuLAq1jDwSxdKWVQMZAYKrK.jpg",
     "releaseDate": "2024-12-20",
     "rating": 8.2,
     "genres": ["Drama", "History"]
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "title": "Nosferatu",
-    "posterUrl": "https://image.tmdb.org/t/p/original/dJcijF5L6QqxuJiHpQvVFG5Hfce.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/dJcijF5L6QqxuJiHpQvVFG5Hfce.jpg",
     "releaseDate": "2024-12-25",
     "rating": 7.9,
     "genres": ["Horror", "Gothic", "Drama"]
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "title": "F1: The Movie",
-    "posterUrl": "https://image.tmdb.org/t/p/original/kLVj4dRtNFVbzKgI5wWq6VuG5Tm.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/kLVj4dRtNFVbzKgI5wWq6VuG5Tm.jpg",
     "releaseDate": "2025-06-27",
     "rating": 7.7,
     "genres": ["Action", "Drama", "Sport"]
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "title": "Sinners",
-    "posterUrl": "https://image.tmdb.org/t/p/original/yWgnuGwrHQdT0XKPGC7bSNdKQXf.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/yWgnuGwrHQdT0XKPGC7bSNdKQXf.jpg",
     "releaseDate": "2025-04-18",
     "rating": 7.6,
     "genres": ["Horror", "Thriller", "Drama"]
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "title": "Mission: Impossible - The Final Reckoning",
-    "posterUrl": "https://image.tmdb.org/t/p/original/qRhxqCT5JDQPZ4OvWv2fQVmYKbj.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/qRhxqCT5JDQPZ4OvWv2fQVmYKbj.jpg",
     "releaseDate": "2025-05-23",
     "rating": 8.1,
     "genres": ["Action", "Thriller", "Adventure"]
@@ -66,7 +66,7 @@
   {
     "id": 9,
     "title": "Superman",
-    "posterUrl": "https://image.tmdb.org/t/p/original/kTsAeJnfN9xb9DQHh1WS4TYzqcW.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/kTsAeJnfN9xb9DQHh1WS4TYzqcW.jpg",
     "releaseDate": "2025-07-11",
     "rating": 8.3,
     "genres": ["Action", "Adventure", "Science Fiction"]
@@ -74,7 +74,7 @@
   {
     "id": 10,
     "title": "Avatar: Fire and Ash",
-    "posterUrl": "https://image.tmdb.org/t/p/original/7xQsVNEwjhTXDNrWXUwGjDvgqx2.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7xQsVNEwjhTXDNrWXUwGjDvgqx2.jpg",
     "releaseDate": "2025-12-19",
     "rating": 8.5,
     "genres": ["Science Fiction", "Adventure", "Fantasy"]
@@ -82,7 +82,7 @@
   {
     "id": 11,
     "title": "The Wild Robot",
-    "posterUrl": "https://image.tmdb.org/t/p/original/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg",
     "releaseDate": "2024-09-27",
     "rating": 8.0,
     "genres": ["Animation", "Science Fiction", "Family"]
@@ -90,7 +90,7 @@
   {
     "id": 12,
     "title": "Furiosa: A Mad Max Saga",
-    "posterUrl": "https://image.tmdb.org/t/p/original/iADOJ8Zymht2JPMoy3R7xceZprc.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/iADOJ8Zymht2JPMoy3R7xceZprc.jpg",
     "releaseDate": "2024-05-24",
     "rating": 7.6,
     "genres": ["Action", "Adventure", "Science Fiction"]
@@ -98,7 +98,7 @@
   {
     "id": 13,
     "title": "The Substance",
-    "posterUrl": "https://image.tmdb.org/t/p/original/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
     "releaseDate": "2024-09-20",
     "rating": 7.4,
     "genres": ["Horror", "Science Fiction", "Drama"]
@@ -106,7 +106,7 @@
   {
     "id": 14,
     "title": "A Minecraft Movie",
-    "posterUrl": "https://image.tmdb.org/t/p/original/9vbRKJjF8iLPqOd0r1j8xCr9VhK.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9vbRKJjF8iLPqOd0r1j8xCr9VhK.jpg",
     "releaseDate": "2025-04-04",
     "rating": 6.8,
     "genres": ["Adventure", "Family", "Comedy"]
@@ -114,7 +114,7 @@
   {
     "id": 15,
     "title": "Ballerina",
-    "posterUrl": "https://image.tmdb.org/t/p/original/9xhKfRdToSsjcqCQZqvJHqZXKmv.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9xhKfRdToSsjcqCQZqvJHqZXKmv.jpg",
     "releaseDate": "2025-06-06",
     "rating": 7.5,
     "genres": ["Action", "Thriller"]
@@ -122,7 +122,7 @@
   {
     "id": 16,
     "title": "Mickey 17",
-    "posterUrl": "https://image.tmdb.org/t/p/original/2rCMJoqLb6sMwnVYGqMvn1F5M3u.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/2rCMJoqLb6sMwnVYGqMvn1F5M3u.jpg",
     "releaseDate": "2025-04-18",
     "rating": 7.3,
     "genres": ["Science Fiction", "Comedy", "Thriller"]
@@ -130,7 +130,7 @@
   {
     "id": 17,
     "title": "How to Train Your Dragon",
-    "posterUrl": "https://image.tmdb.org/t/p/original/nTvK6Hl86qPSYYi6AO6GmZLRpvJ.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/nTvK6Hl86qPSYYi6AO6GmZLRpvJ.jpg",
     "releaseDate": "2025-06-13",
     "rating": 7.7,
     "genres": ["Fantasy", "Adventure", "Family"]
@@ -138,7 +138,7 @@
   {
     "id": 18,
     "title": "Jurassic World Rebirth",
-    "posterUrl": "https://image.tmdb.org/t/p/original/7bWdMCdDmYGnnDEoOwQDhvmhCfj.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7bWdMCdDmYGnnDEoOwQDhvmhCfj.jpg",
     "releaseDate": "2025-07-02",
     "rating": 7.2,
     "genres": ["Action", "Adventure", "Science Fiction"]
@@ -146,7 +146,7 @@
   {
     "id": 19,
     "title": "Zootopia 2",
-    "posterUrl": "https://image.tmdb.org/t/p/original/7WLMosyqFJgbzlVH2bBTGPrGqaD.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7WLMosyqFJgbzlVH2bBTGPrGqaD.jpg",
     "releaseDate": "2025-11-26",
     "rating": 7.9,
     "genres": ["Animation", "Adventure", "Comedy", "Family"]
@@ -154,7 +154,7 @@
   {
     "id": 20,
     "title": "Companion",
-    "posterUrl": "https://image.tmdb.org/t/p/original/9g9hFKYuKgVmXiJcHPF2eI2Vvmm.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9g9hFKYuKgVmXiJcHPF2eI2Vvmm.jpg",
     "releaseDate": "2025-01-31",
     "rating": 6.9,
     "genres": ["Horror", "Thriller", "Science Fiction"]
@@ -162,7 +162,7 @@
   {
     "id": 21,
     "title": "Captain America: Brave New World",
-    "posterUrl": "https://image.tmdb.org/t/p/original/4vv6KTYnZnUcksrWZoJTHqRDGrm.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/4vv6KTYnZnUcksrWZoJTHqRDGrm.jpg",
     "releaseDate": "2025-02-14",
     "rating": 7.8,
     "genres": ["Action", "Adventure", "Science Fiction"]
@@ -170,7 +170,7 @@
   {
     "id": 22,
     "title": "Thunderbolts",
-    "posterUrl": "https://image.tmdb.org/t/p/original/5KBLHnTqQZZvgFtVLwNpO6czSwI.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/5KBLHnTqQZZvgFtVLwNpO6czSwI.jpg",
     "releaseDate": "2025-05-02",
     "rating": 7.6,
     "genres": ["Action", "Adventure", "Science Fiction"]
@@ -178,7 +178,7 @@
   {
     "id": 23,
     "title": "The Fantastic Four: First Steps",
-    "posterUrl": "https://image.tmdb.org/t/p/original/9dLTzNLNT0Y8fCLhUv3bCfARwdS.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9dLTzNLNT0Y8fCLhUv3bCfARwdS.jpg",
     "releaseDate": "2025-07-25",
     "rating": 7.9,
     "genres": ["Action", "Adventure", "Science Fiction"]
@@ -186,7 +186,7 @@
   {
     "id": 24,
     "title": "Wake Up Dead Man: A Knives Out Mystery",
-    "posterUrl": "https://image.tmdb.org/t/p/original/4QW8WmKmqmJpFvz1jKQGHKCwJnE.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/4QW8WmKmqmJpFvz1jKQGHKCwJnE.jpg",
     "releaseDate": "2025-12-12",
     "rating": 8.0,
     "genres": ["Mystery", "Comedy", "Crime"]
@@ -194,7 +194,7 @@
   {
     "id": 25,
     "title": "The Electric State",
-    "posterUrl": "https://image.tmdb.org/t/p/original/gFpFYrPgVDvHLcV1qvlJPvQxPGE.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/gFpFYrPgVDvHLcV1qvlJPvQxPGE.jpg",
     "releaseDate": "2025-03-14",
     "rating": 7.1,
     "genres": ["Science Fiction", "Adventure", "Action"]
@@ -202,7 +202,7 @@
   {
     "id": 26,
     "title": "Wolf Man",
-    "posterUrl": "https://image.tmdb.org/t/p/original/kPSJdvVgc3ntlvmdpMbvSkmZTNY.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/kPSJdvVgc3ntlvmdpMbvSkmZTNY.jpg",
     "releaseDate": "2025-01-17",
     "rating": 6.7,
     "genres": ["Horror", "Thriller"]
@@ -210,7 +210,7 @@
   {
     "id": 27,
     "title": "M3GAN 2.0",
-    "posterUrl": "https://image.tmdb.org/t/p/original/8LVkVNBgfmF5sBqTp4QjLK6n5C4.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/8LVkVNBgfmF5sBqTp4QjLK6n5C4.jpg",
     "releaseDate": "2025-06-27",
     "rating": 7.0,
     "genres": ["Horror", "Science Fiction", "Thriller"]
@@ -218,7 +218,7 @@
   {
     "id": 28,
     "title": "The Smashing Machine",
-    "posterUrl": "https://image.tmdb.org/t/p/original/9jGkXqMXfDWJQi1q2XKvVpxVX5z.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9jGkXqMXfDWJQi1q2XKvVpxVX5z.jpg",
     "releaseDate": "2025-10-03",
     "rating": 7.4,
     "genres": ["Drama", "Biography", "Sport"]
@@ -226,7 +226,7 @@
   {
     "id": 29,
     "title": "After the Hunt",
-    "posterUrl": "https://image.tmdb.org/t/p/original/8uKGQ7ZLwPjqYWtfK1h2TJdVbXd.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/8uKGQ7ZLwPjqYWtfK1h2TJdVbXd.jpg",
     "releaseDate": "2025-10-10",
     "rating": 7.2,
     "genres": ["Drama", "Thriller"]
@@ -234,7 +234,7 @@
   {
     "id": 30,
     "title": "Lilo & Stitch",
-    "posterUrl": "https://image.tmdb.org/t/p/original/9daBj7UQwU7E3cMApmFO0B9gvQq.jpg",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/9daBj7UQwU7E3cMApmFO0B9gvQq.jpg",
     "releaseDate": "2025-05-23",
     "rating": 7.3,
     "genres": ["Family", "Comedy", "Science Fiction"]

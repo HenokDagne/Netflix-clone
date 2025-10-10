@@ -1,5 +1,7 @@
+
 export async function getMovieCard() {
-    
+const url= '';
+const Api_key = '';
 
     try {
         const response = await fetch(`${url}/movie/popular?api_key=${Api_key}`
@@ -30,3 +32,4 @@ export async function searchMovies(params: string){
     }
 }
 
+export default getMovieCard;
