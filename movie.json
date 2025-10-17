@@ -5,7 +5,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg",
     "releaseDate": "2024-03-01",
     "rating": 8.5,
-    "genres": ["Science Fiction", "Adventure", "Drama"]
+    "genres": ["Science Fiction", "Adventure", "Drama"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 2,
@@ -13,7 +15,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg",
     "releaseDate": "2024-06-14",
     "rating": 7.7,
-    "genres": ["Animation", "Family", "Adventure", "Comedy"]
+    "genres": ["Animation", "Family", "Adventure", "Comedy"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 3,
@@ -21,7 +25,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/c5Tqxeo1UpBvnAc3csUm7j3hlQl.jpg",
     "releaseDate": "2024-11-22",
     "rating": 7.8,
-    "genres": ["Musical", "Fantasy", "Romance"]
+    "genres": ["Musical", "Fantasy", "Romance"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 4,
@@ -29,7 +35,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/qKnqAuLAq1jDwSxdKWVQMZAYKrK.jpg",
     "releaseDate": "2024-12-20",
     "rating": 8.2,
-    "genres": ["Drama", "History"]
+    "genres": ["Drama", "History"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 5,
@@ -37,7 +45,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/dJcijF5L6QqxuJiHpQvVFG5Hfce.jpg",
     "releaseDate": "2024-12-25",
     "rating": 7.9,
-    "genres": ["Horror", "Gothic", "Drama"]
+    "genres": ["Horror", "Gothic", "Drama"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 6,
@@ -45,7 +55,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/kLVj4dRtNFVbzKgI5wWq6VuG5Tm.jpg",
     "releaseDate": "2025-06-27",
     "rating": 7.7,
-    "genres": ["Action", "Drama", "Sport"]
+    "genres": ["Action", "Drama", "Sport"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 7,
@@ -53,7 +65,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/yWgnuGwrHQdT0XKPGC7bSNdKQXf.jpg",
     "releaseDate": "2025-04-18",
     "rating": 7.6,
-    "genres": ["Horror", "Thriller", "Drama"]
+    "genres": ["Horror", "Thriller", "Drama"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 8,
@@ -61,7 +75,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/qRhxqCT5JDQPZ4OvWv2fQVmYKbj.jpg",
     "releaseDate": "2025-05-23",
     "rating": 8.1,
-    "genres": ["Action", "Thriller", "Adventure"]
+    "genres": ["Action", "Thriller", "Adventure"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 9,
@@ -69,7 +85,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/kTsAeJnfN9xb9DQHh1WS4TYzqcW.jpg",
     "releaseDate": "2025-07-11",
     "rating": 8.3,
-    "genres": ["Action", "Adventure", "Science Fiction"]
+    "genres": ["Action", "Adventure", "Science Fiction"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 10,
@@ -77,7 +95,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/7xQsVNEwjhTXDNrWXUwGjDvgqx2.jpg",
     "releaseDate": "2025-12-19",
     "rating": 8.5,
-    "genres": ["Science Fiction", "Adventure", "Fantasy"]
+    "genres": ["Science Fiction", "Adventure", "Fantasy"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 11,
@@ -85,7 +105,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg",
     "releaseDate": "2024-09-27",
     "rating": 8.0,
-    "genres": ["Animation", "Science Fiction", "Family"]
+    "genres": ["Animation", "Science Fiction", "Family"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 12,
@@ -93,7 +115,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/iADOJ8Zymht2JPMoy3R7xceZprc.jpg",
     "releaseDate": "2024-05-24",
     "rating": 7.6,
-    "genres": ["Action", "Adventure", "Science Fiction"]
+    "genres": ["Action", "Adventure", "Science Fiction"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 13,
@@ -101,7 +125,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
     "releaseDate": "2024-09-20",
     "rating": 7.4,
-    "genres": ["Horror", "Science Fiction", "Drama"]
+    "genres": ["Horror", "Science Fiction", "Drama"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 14,
@@ -109,7 +135,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/9vbRKJjF8iLPqOd0r1j8xCr9VhK.jpg",
     "releaseDate": "2025-04-04",
     "rating": 6.8,
-    "genres": ["Adventure", "Family", "Comedy"]
+    "genres": ["Adventure", "Family", "Comedy"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 15,
@@ -117,7 +145,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/9xhKfRdToSsjcqCQZqvJHqZXKmv.jpg",
     "releaseDate": "2025-06-06",
     "rating": 7.5,
-    "genres": ["Action", "Thriller"]
+    "genres": ["Action", "Thriller"],
+    "popular": true,
+    "favorite": false
   },
   {
     "id": 16,
@@ -125,7 +155,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/2rCMJoqLb6sMwnVYGqMvn1F5M3u.jpg",
     "releaseDate": "2025-04-18",
     "rating": 7.3,
-    "genres": ["Science Fiction", "Comedy", "Thriller"]
+    "genres": ["Science Fiction", "Comedy", "Thriller"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 17,
@@ -133,7 +165,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/nTvK6Hl86qPSYYi6AO6GmZLRpvJ.jpg",
     "releaseDate": "2025-06-13",
     "rating": 7.7,
-    "genres": ["Fantasy", "Adventure", "Family"]
+    "genres": ["Fantasy", "Adventure", "Family"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 18,
@@ -141,7 +175,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/7bWdMCdDmYGnnDEoOwQDhvmhCfj.jpg",
     "releaseDate": "2025-07-02",
     "rating": 7.2,
-    "genres": ["Action", "Adventure", "Science Fiction"]
+    "genres": ["Action", "Adventure", "Science Fiction"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 19,
@@ -149,7 +185,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/7WLMosyqFJgbzlVH2bBTGPrGqaD.jpg",
     "releaseDate": "2025-11-26",
     "rating": 7.9,
-    "genres": ["Animation", "Adventure", "Comedy", "Family"]
+    "genres": ["Animation", "Adventure", "Comedy", "Family"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 20,
@@ -157,7 +195,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/9g9hFKYuKgVmXiJcHPF2eI2Vvmm.jpg",
     "releaseDate": "2025-01-31",
     "rating": 6.9,
-    "genres": ["Horror", "Thriller", "Science Fiction"]
+    "genres": ["Horror", "Thriller", "Science Fiction"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 21,
@@ -165,7 +205,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/4vv6KTYnZnUcksrWZoJTHqRDGrm.jpg",
     "releaseDate": "2025-02-14",
     "rating": 7.8,
-    "genres": ["Action", "Adventure", "Science Fiction"]
+    "genres": ["Action", "Adventure", "Science Fiction"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 22,
@@ -173,7 +215,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/5KBLHnTqQZZvgFtVLwNpO6czSwI.jpg",
     "releaseDate": "2025-05-02",
     "rating": 7.6,
-    "genres": ["Action", "Adventure", "Science Fiction"]
+    "genres": ["Action", "Adventure", "Science Fiction"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 23,
@@ -181,7 +225,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/9dLTzNLNT0Y8fCLhUv3bCfARwdS.jpg",
     "releaseDate": "2025-07-25",
     "rating": 7.9,
-    "genres": ["Action", "Adventure", "Science Fiction"]
+    "genres": ["Action", "Adventure", "Science Fiction"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 24,
@@ -189,7 +235,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/4QW8WmKmqmJpFvz1jKQGHKCwJnE.jpg",
     "releaseDate": "2025-12-12",
     "rating": 8.0,
-    "genres": ["Mystery", "Comedy", "Crime"]
+    "genres": ["Mystery", "Comedy", "Crime"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 25,
@@ -197,7 +245,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/gFpFYrPgVDvHLcV1qvlJPvQxPGE.jpg",
     "releaseDate": "2025-03-14",
     "rating": 7.1,
-    "genres": ["Science Fiction", "Adventure", "Action"]
+    "genres": ["Science Fiction", "Adventure", "Action"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 26,
@@ -205,7 +255,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/kPSJdvVgc3ntlvmdpMbvSkmZTNY.jpg",
     "releaseDate": "2025-01-17",
     "rating": 6.7,
-    "genres": ["Horror", "Thriller"]
+    "genres": ["Horror", "Thriller"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 27,
@@ -213,7 +265,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/8LVkVNBgfmF5sBqTp4QjLK6n5C4.jpg",
     "releaseDate": "2025-06-27",
     "rating": 7.0,
-    "genres": ["Horror", "Science Fiction", "Thriller"]
+    "genres": ["Horror", "Science Fiction", "Thriller"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 28,
@@ -221,7 +275,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/9jGkXqMXfDWJQi1q2XKvVpxVX5z.jpg",
     "releaseDate": "2025-10-03",
     "rating": 7.4,
-    "genres": ["Drama", "Biography", "Sport"]
+    "genres": ["Drama", "Biography", "Sport"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 29,
@@ -229,7 +285,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/8uKGQ7ZLwPjqYWtfK1h2TJdVbXd.jpg",
     "releaseDate": "2025-10-10",
     "rating": 7.2,
-    "genres": ["Drama", "Thriller"]
+    "genres": ["Drama", "Thriller"],
+    "popular": false,
+    "favorite": true
   },
   {
     "id": 30,
@@ -237,6 +295,9 @@
     "posterUrl": "https://image.tmdb.org/t/p/w500/9daBj7UQwU7E3cMApmFO0B9gvQq.jpg",
     "releaseDate": "2025-05-23",
     "rating": 7.3,
-    "genres": ["Family", "Comedy", "Science Fiction"]
+    "genres": ["Family", "Comedy", "Science Fiction"],
+    "popular": false,
+    "favorite": true
   }
 ]
+
