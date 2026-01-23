@@ -29,7 +29,7 @@ export function Favorites() {
               width={64}
               height={84}
               style={{ width: 64, height: 84, objectFit: "cover", flexShrink: 0 }}
-              className="mr-3 rounded-xl"
+              className="mr-3 rounded-xl hover:ring-2 ring-lime-400"
             />
           ) : (
             <div

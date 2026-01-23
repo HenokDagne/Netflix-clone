@@ -18,8 +18,7 @@ export function Main() {
         {/* Responsive grid: 1 col mobile, 2 sm, 3 md, 4 lg, 5 xl */}
         <Cards />
 
-        {/* Example: responsive footer spacing */}
-        <div className="mt-6 text-sm text-gray-400">Showing 12 items</div>
+        
       </div>
     </main>
   );

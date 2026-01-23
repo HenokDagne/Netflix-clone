@@ -1,23 +1,76 @@
-import React, { useState } from "react";
-import { SiNetflix } from "react-icons/si";
-import { Link } from 'react-router-dom';
-function NavbarComponent() {
+// ...existing code...
+import React, { useState, useEffect } from "react";
+import { Link, useSearchParams } from "react-router-dom";
+import netflixLogo from "../../assets/netflix.png";
+
+type NavbarProps = {
+  onToggleSidebar?: () => void;
+};
+
+function NavbarComponent({ onToggleSidebar }: NavbarProps) {
   const [open, setOpen] = useState(false);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const initialQ = searchParams.get("q") ?? "";
+  const [search, setSearch] = useState(initialQ);
+
+  // update local state when URL param changes (back/forward or external change)
+  useEffect(() => {
+    const q = searchParams.get("q") ?? "";
+    if (q !== search) setSearch(q);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [searchParams]);
+
+  // debounce updating the URL query param so typing doesn't spam history
+  useEffect(() => {
+    const t = setTimeout(() => {
+      const trimmed = (search ?? "").trim();
+      if (trimmed) {
+        setSearchParams({ q: trimmed });
+      } else {
+        // remove q param
+        setSearchParams({});
+      }
+    }, 300);
+
+    return () => clearTimeout(t);
+  }, [search, setSearchParams]);
+
+  const onChangeSearch = (value: string) => {
+    setSearch(value);
+  };
+
+  const onToggleNav = () => {
+    if (onToggleSidebar) onToggleSidebar();
+  };
 
   return (
     <nav
       className="border-b border-gray-800 px-4 md:px-6 py-3 bg-[#080a0b] text-white"
       aria-label="Top navigation"
     >
-      <div className="max-w-screen-2xl mx-auto flex items-center justify-between">
-        {/* left: logo */}
-        <div className="flex items-center space-x-3">
-          <SiNetflix size={28} color="#E50914" />
-          <span className="text-lg font-bold">Netflix</span>
+      <div
+        className="max-w-screen-2xl mx-auto flex items-center justify-between"
+        data-nav-wrapper
+      >
+        {/* left: logo + collapse */}
+        <div className="flex items-center justify-between gap-4 mb-0 text-2xl font-semibold">
+          <button
+            type="button"
+            className="flex items-center gap-2 py-2 text-base"
+            onClick={onToggleNav}
+            aria-label="Toggle sidebar links"
+          >
+            <span className="h-5 w-5 inline-block">☰</span>
+          </button>
+
+          <div className="flex items-center gap-3">
+            <img src={netflixLogo} alt="Logo" className="h-8 md:h-12" />
+            <span className="text-base md:text-lg font-bold">Netflix</span>
+          </div>
         </div>
 
         {/* center: links (desktop) */}
-        <div className="hidden md:flex items-center space-x-6">
+        <div className="hidden md:flex items-center space-x-6" data-nav-section>
           <Link to="/" className="text-gray-300 hover:text-white">
             Home
           </Link>
@@ -25,7 +78,7 @@ function NavbarComponent() {
             TV Shows
           </Link>
           <Link to="/login" className="text-gray-300 hover:text-white">
-            Login 
+            Login
           </Link>
           <Link to="/my-list" className="text-gray-300 hover:text-white">
             My List
@@ -33,7 +86,7 @@ function NavbarComponent() {
         </div>
 
         {/* right: search (desktop) + profile */}
-        <div className="hidden md:flex items-center space-x-4">
+        <div className="hidden md:flex items-center space-x-4" data-nav-section>
           <div className="relative">
             <svg
               className="w-4 h-4 text-gray-500 absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none"
@@ -55,9 +108,10 @@ function NavbarComponent() {
               type="text"
               placeholder="Search"
               aria-label="Search movies"
+              value={search}
+              onChange={(e) => onChangeSearch(e.target.value)}
               className="bg-gray-900 text-white pl-10 pr-10 py-2 rounded-full w-64 md:w-80 lg:w-[420px] focus:outline-none focus:ring-2 focus:ring-red-600"
             />
-            
           </div>
 
           <img
@@ -82,7 +136,6 @@ function NavbarComponent() {
             onClick={() => setOpen((v) => !v)}
           >
             {open ? (
-              /* close icon */
               <svg
                 className="w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -98,7 +151,6 @@ function NavbarComponent() {
                 />
               </svg>
             ) : (
-              /* hamburger icon */
               <svg
                 className="w-6 h-6"
                 xmlns="http://www.w3.org/2000/svg"
@@ -158,6 +210,14 @@ function NavbarComponent() {
                   strokeLinejoin="round"
                 />
               </svg>
+              <input
+                type="text"
+                placeholder="Search"
+                aria-label="Search movies"
+                value={search}
+                onChange={(e) => onChangeSearch(e.target.value)}
+                className="bg-gray-900 text-white pl-10 pr-10 py-2 rounded-full w-full focus:outline-none focus:ring-2 focus:ring-red-600"
+              />
             </div>
           </div>
         </div>
@@ -167,3 +227,4 @@ function NavbarComponent() {
 }
 
 export default NavbarComponent;
+// ...existing code...

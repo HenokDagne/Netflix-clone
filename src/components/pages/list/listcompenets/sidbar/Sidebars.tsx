@@ -92,7 +92,7 @@ function Sidebars() {
           />
           <aside
             id="mobile-filters"
-            className="fixed left-0 top-0 bottom-0 w-72 bg-[#080a0b] p-6 overflow-y-auto shadow-lg"
+            className="fixed left-0 top-0 bottom-0 w-60 bg-[#080a0b] p-6 overflow-y-auto shadow-lg"
           >
             <div className="flex items-center justify-between mb-4">
               <div className="text-xl font-semibold text-white">Filters</div>

@@ -1,5 +1,16 @@
 
 
+/**
+ * Home component that displays a featured movie background image.
+ *
+ * This component renders a responsive div that serves as a visual
+ * representation of a featured movie. The background image is fetched
+ * from a specified URL and is displayed with a scaling effect on hover.
+ * The component is styled to be centered and responsive, adapting its
+ * height based on the screen size.
+ *
+ * @returns {JSX.Element} The rendered Home component.
+ */
 function Home() {
   const bgUrl =
     "https://image.tmdb.org/t/p/original/iADOJ8Zymht2JPMoy3R7xceZprc.jpg";
