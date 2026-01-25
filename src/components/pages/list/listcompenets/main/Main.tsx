@@ -1,14 +1,15 @@
 import NavFilter from "./NavFilter";
-import NavbarComponent  from "../../../../navbar/NavbarComponent"; 
-import  Cards  from "./Cards"; 
+import Cards from "./Cards";
 
-export function Main() {
+type MainProps = {
+  sidebarOpen?: boolean;
+};
+
+export function Main({ sidebarOpen = false }: MainProps) {
   return (
-    <main className="col-start-2 row-start-1 row-span-2 min-h-0 overflow-auto bg-[#080a0b]">
-      {/* NavFilter stays visible on top (sticky) on all viewports */}
-       <div className="sticky top-0 z-20 bg-[#080a0b]">
-        <NavbarComponent />
-      </div>
+    <main
+      className={`${sidebarOpen ? "col-start-2" : "col-start-1"} row-start-2 min-h-0 overflow-auto bg-[#080a0b]`}
+    >
       <div className="sticky top-0 z-20 bg-[#080a0b]">
         <NavFilter />
       </div>
@@ -17,8 +18,6 @@ export function Main() {
       <div className="p-4 sm:p-6 md:p-8">
         {/* Responsive grid: 1 col mobile, 2 sm, 3 md, 4 lg, 5 xl */}
         <Cards />
-
-        
       </div>
     </main>
   );

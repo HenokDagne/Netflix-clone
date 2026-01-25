@@ -38,6 +38,7 @@ export async function getMovieCard(): Promise<Movie[] | null> {
 
     // Optionally log objects instead of names
     console.log("movie objects:", items);
+    
 
     return items;
   } catch (error) {

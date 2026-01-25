@@ -1,16 +1,13 @@
-import  Popularcards  from "./Popularcards"; 
-import Favorites  from "./Favorites";
-
+import Popularcards from "./Popularcards";
+import Favorites from "./Favorites";
 
 function Popularbar() {
   return (
     // sidebar: full height (min-h-0 allows children to shrink inside grid)
-    <div className="flex flex-col bg-blue-600 h-full min-h-0">
+    <div className="flex flex-col bg-blue-600 h-200 min-h-0 overflow-hidden">
       {/* Two equal boxes that share available height and scroll if content overflows */}
       <Popularcards />
       <Favorites />
-
-      
     </div>
   );
 }

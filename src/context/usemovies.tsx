@@ -90,7 +90,7 @@ export const MoviesProvider: React.FC<{ children: ReactNode }> = ({
       setMovies((mv) =>
         mv
           ? mv.map((m) => (m.id === id ? { ...m, favorite: s.has(id) } : m))
-          : mv
+          : mv,
       );
       return next;
     });
@@ -112,7 +112,7 @@ export const MoviesProvider: React.FC<{ children: ReactNode }> = ({
         try {
           // fetch genre map
           const gRes = await fetch(
-            `${tmdbUrl}/genre/movie/list?api_key=${tmdbKey}`
+            `${tmdbUrl}/genre/movie/list?api_key=${tmdbKey}`,
           );
           const genreMap: Record<number, string> = {};
           if (gRes.ok) {
@@ -126,7 +126,7 @@ export const MoviesProvider: React.FC<{ children: ReactNode }> = ({
           }
 
           const res = await fetch(
-            `${tmdbUrl}/movie/popular?api_key=${tmdbKey}`
+            `${tmdbUrl}/movie/popular?api_key=${tmdbKey}`,
           );
           if (res.ok) {
             const json = await res.json();
@@ -157,7 +157,7 @@ export const MoviesProvider: React.FC<{ children: ReactNode }> = ({
             console.warn(
               "TMDB popular fetch failed",
               res.status,
-              res.statusText
+              res.statusText,
             );
           }
         } catch (tmerr) {
@@ -212,6 +212,7 @@ export const MoviesProvider: React.FC<{ children: ReactNode }> = ({
         });
       }
       setMovies(normalized);
+      console.log("Movies loaded", normalized);
     } catch (err: unknown) {
       const msg = err instanceof Error ? err.message : String(err);
       setError(msg || "Failed to load movies");

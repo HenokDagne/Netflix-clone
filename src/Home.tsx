@@ -26,24 +26,24 @@ import Main from "./main/Main";
 const Home: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
-  const gridCols = sidebarOpen ? "grid-cols-[12rem_1fr]" : "grid-cols-1";
+  const gridCols = sidebarOpen ? "grid-cols-[16rem_1fr]" : "grid-cols-1";
   const mainColClass = sidebarOpen
     ? "row-start-2 col-start-2"
     : "row-start-2 col-start-1";
 
   return (
-    <div className="h-screen w-screen bg-black text-white">
+    <div className="h-screen w-screen bg-black text-white overflow-hidden">
       {/* grid: navbar spans full width; sidebar + main share second row */}
-      <div className={`grid grid-rows-[auto_1fr] ${gridCols} h-full`}>
-        <div className="col-span-2">
+      <div className={`grid grid-rows-[auto_1fr] ${gridCols} h-full min-h-0`}>
+        <div className="col-span-2 sticky top-0 z-20">
           <NavbarComponent onToggleSidebar={() => setSidebarOpen((v) => !v)} />
         </div>
         {sidebarOpen && (
-          <div className="row-start-2 col-start-1">
+          <div className="row-start-2 col-start-1 h-full overflow-hidden">
             <Sidebar />
           </div>
         )}
-        <div className={mainColClass}>
+        <div className={`${mainColClass} min-h-0 overflow-y-auto`}>
           <Main />
         </div>
       </div>

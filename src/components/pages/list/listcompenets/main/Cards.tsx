@@ -1,6 +1,6 @@
 // ...existing code...
 import React from "react";
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import { useMovies } from "../../../../../context/usemovies";
 import { useFilteredMovies } from "../../../../../context/useFilteredMovies";
 
@@ -17,6 +17,7 @@ export const Cards = () => {
   const { movies: allMovies, toggleFavorite } = useMovies();
   const { movies: filteredMovies } = useFilteredMovies();
   const [searchParams] = useSearchParams();
+  const navigate = useNavigate();
 
   // base list = filtered (if any) otherwise all
   let moviesToRender: Movie[] = (filteredMovies ?? allMovies ?? []) as Movie[];
@@ -31,7 +32,7 @@ export const Cards = () => {
         item.name ??
         (item.pairs
           ? Object.fromEntries(
-              (item.pairs as any[]).map((p: any) => [p.key, p.value])
+              (item.pairs as any[]).map((p: any) => [p.key, p.value]),
             ).title
           : "") ??
         "") as string;
@@ -49,12 +50,13 @@ export const Cards = () => {
             role="button"
             tabIndex={0}
             onClick={() => {
-              if (movie?.id && toggleFavorite) toggleFavorite(Number(movie.id));
+              if (!movie?.id) return;
+              navigate(`/movies/${movie.id}`, { state: { movie } });
             }}
             onKeyDown={(e) => {
               if (e.key === "Enter" || e.key === " ") {
-                if (movie?.id && toggleFavorite)
-                  toggleFavorite(Number(movie.id));
+                if (!movie?.id) return;
+                navigate(`/movies/${movie.id}`, { state: { movie } });
               }
             }}
             key={movie?.id ?? index}
@@ -68,15 +70,22 @@ export const Cards = () => {
             }}
           >
             {/* heart indicator */}
-            {movie && (movie as any).favorite ? (
-              <div className="absolute top-2 right-2 text-red-500 text-xl drop-shadow-lg">
-                ❤️
-              </div>
-            ) : (
-              <div className="absolute top-2 right-2 text-white text-xl opacity-60">
-                🤍
-              </div>
-            )}
+            <button
+              type="button"
+              aria-pressed={Boolean((movie as any)?.favorite)}
+              onClick={(e) => {
+                e.stopPropagation();
+                if (movie?.id && toggleFavorite)
+                  toggleFavorite(Number(movie.id));
+              }}
+              className="absolute top-2 right-2 text-xl drop-shadow-lg"
+            >
+              {(movie as any)?.favorite ? (
+                <span className="text-red-500">❤️</span>
+              ) : (
+                <span className="text-white opacity-80">🤍</span>
+              )}
+            </button>
           </div>
         ))}
     </div>

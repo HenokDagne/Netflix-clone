@@ -7,22 +7,27 @@ import {
   Download,
   Gamepad2,
 } from "lucide-react";
-import netflixLogo from "../../assets/netflix.png";
+
 import telegramLogo from "../../assets/telegram.jpg";
 import instagramLogo from "../../assets/instagram.jpg";
 import tiktokLogo from "../../assets/tiktok.png";
 import twitterLogo from "../../assets/twitter.png";
 
-function Sidebar() {
+type SidebarProps = {
+  isOpen?: boolean;
+};
+
+function Sidebar({ isOpen = true }: SidebarProps) {
   return (
     <>
       {/* Left Sidebar: spans navbar row and main row */}
       <aside
-        className="row-span-2 col-start-1 bg-gray-900 border-r border-gray-800 p-6 overflow-y-auto"
+        className={`row-start-2 col-start-1 bg-gray-900 border-r border-gray-800 p-6 overflow-y-auto h-full min-h-0 ${
+          isOpen ? "block" : "hidden"
+        }`}
         style={{ backgroundColor: "#080a0b" }}
       >
         <nav className="space-y-3 text-sm text-gray-300">
-          
           <div></div>
           <div className="py-2">
             <div className="relative">
