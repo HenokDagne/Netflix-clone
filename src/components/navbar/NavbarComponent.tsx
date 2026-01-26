@@ -1,7 +1,10 @@
 // ...existing code...
 import React, { useState, useEffect } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams, useNavigate } from "react-router-dom";
+import { onAuthStateChanged } from "firebase/auth";
 import netflixLogo from "../../assets/netflix.png";
+import { auth } from "../../config/firbase";
+import logoutHandler from "../../api/Authentication/logoutHandler";
 
 type NavbarProps = {
   onToggleSidebar?: () => void;
@@ -12,6 +15,8 @@ function NavbarComponent({ onToggleSidebar }: NavbarProps) {
   const [searchParams, setSearchParams] = useSearchParams();
   const initialQ = searchParams.get("q") ?? "";
   const [search, setSearch] = useState(initialQ);
+  const [isAuthed, setIsAuthed] = useState(false);
+  const navigate = useNavigate();
 
   // update local state when URL param changes (back/forward or external change)
   useEffect(() => {
@@ -19,6 +24,14 @@ function NavbarComponent({ onToggleSidebar }: NavbarProps) {
     if (q !== search) setSearch(q);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchParams]);
+
+  // Track auth state to swap Login/Logout
+  useEffect(() => {
+    const unsub = onAuthStateChanged(auth, (user) => {
+      setIsAuthed(!!user);
+    });
+    return () => unsub();
+  }, []);
 
   // debounce updating the URL query param so typing doesn't spam history
   useEffect(() => {
@@ -77,9 +90,21 @@ function NavbarComponent({ onToggleSidebar }: NavbarProps) {
           <Link to="/tv-shows" className="text-gray-300 hover:text-white">
             TV Shows
           </Link>
-          <Link to="/login" className="text-gray-300 hover:text-white">
-            Login
-          </Link>
+          {isAuthed ? (
+            <button
+              onClick={async () => {
+                await logoutHandler();
+                navigate("/", { replace: true });
+              }}
+              className="text-gray-300 hover:text-white"
+            >
+              Logout
+            </button>
+          ) : (
+            <Link to="/login" className="text-gray-300 hover:text-white">
+              Login
+            </Link>
+          )}
           <Link to="/my-list" className="text-gray-300 hover:text-white">
             My List
           </Link>
