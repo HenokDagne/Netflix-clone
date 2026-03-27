@@ -10,8 +10,10 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-config/firebase.ts
-src/config
+
+# Firebase config
+# - Keep local/legacy file with hardcoded keys out of git
+src/config/firbase.ts
 
 .env
 *.local
