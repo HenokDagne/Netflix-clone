@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useMovies } from "../context/usemovies";
 import { fetchPopularMovies, type PouplarMovies } from "../api/popular";

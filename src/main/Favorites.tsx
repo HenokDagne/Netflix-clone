@@ -1,5 +1,5 @@
 // ...existing code...
-import React from "react";
+
 import { useMovies } from "../context/usemovies";
 
 export function Favorites() {

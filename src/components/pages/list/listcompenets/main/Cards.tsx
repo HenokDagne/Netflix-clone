@@ -1,5 +1,5 @@
 // ...existing code...
-import React from "react";
+
 import { useNavigate, useSearchParams } from "react-router-dom";
 import { useMovies } from "../../../../../context/usemovies";
 import { useFilteredMovies } from "../../../../../context/useFilteredMovies";
