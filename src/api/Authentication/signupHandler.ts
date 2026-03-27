@@ -16,6 +16,7 @@ const signupHandler = async ({
   username,
 }: registrationDetails) => {
   try {
+    if (!auth) throw new Error("FIREBASE_NOT_CONFIGURED");
     const userCredential = await createUserWithEmailAndPassword(
       auth,
       email,

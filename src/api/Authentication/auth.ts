@@ -9,6 +9,7 @@ interface authCredentials {
 
 const signInWithCredentials = async ({ email, password }: authCredentials) => {
   try {
+    if (!auth) throw new Error("FIREBASE_NOT_CONFIGURED");
     await signInWithEmailAndPassword(auth, email, password);
   } catch (error) {
     if (error instanceof FirebaseError) {

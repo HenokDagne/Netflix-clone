@@ -17,6 +17,7 @@ const clearState = () => {
 };
 
 const ensureRecaptcha = (containerId = "recaptcha-container") => {
+  if (!auth) throw new Error("FIREBASE_NOT_CONFIGURED");
   if (!cachedVerifier) {
     cachedVerifier = new RecaptchaVerifier(auth, containerId, {
       size: "invisible",
@@ -30,6 +31,7 @@ export const sendPhoneCode = async (
   containerId?: string,
 ) => {
   try {
+    if (!auth) throw new Error("FIREBASE_NOT_CONFIGURED");
     const verifier = ensureRecaptcha(containerId);
     pendingConfirmation = await signInWithPhoneNumber(
       auth,
@@ -61,6 +63,7 @@ export const sendPhoneCode = async (
 };
 
 export const confirmPhoneCode = async (code: string) => {
+  if (!auth) throw new Error("FIREBASE_NOT_CONFIGURED");
   if (!pendingConfirmation) {
     throw new Error("NO_PENDING_CONFIRMATION");
   }

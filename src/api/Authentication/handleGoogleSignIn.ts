@@ -6,6 +6,7 @@ const googleProvider = new GoogleAuthProvider();
 
 const handleGoogleSignIn = async () => {
   try {
+    if (!auth) throw new Error("FIREBASE_NOT_CONFIGURED");
     const result = await signInWithPopup(auth, googleProvider);
     return { email: result.user.email ?? "" };
   } catch (error) {

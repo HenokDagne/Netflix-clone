@@ -1,5 +1,5 @@
 import { initializeApp, type FirebaseApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAuth, type Auth } from "firebase/auth";
 
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_FIREBASE_API_KEY as string | undefined,
@@ -12,15 +12,30 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID as string | undefined,
 };
 
+const isConfigComplete = (cfg: typeof firebaseConfig) =>
+  !!(
+    cfg.apiKey &&
+    cfg.authDomain &&
+    cfg.projectId &&
+    cfg.storageBucket &&
+    cfg.messagingSenderId &&
+    cfg.appId
+  );
+
 let app: FirebaseApp | null = null;
 
 try {
-  app = initializeApp(firebaseConfig);
+  if (isConfigComplete(firebaseConfig)) {
+    app = initializeApp(firebaseConfig);
+  } else {
+    app = null;
+  }
 } catch {
   // If env vars are missing/invalid, we still want the bundle to build.
   // Firebase will throw at runtime; callers should handle auth failures.
   app = null;
 }
 
-export const auth = app ? getAuth(app) : getAuth();
+export const auth: Auth | null = app ? getAuth(app) : null;
+
 

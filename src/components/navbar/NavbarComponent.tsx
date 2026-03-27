@@ -29,9 +29,11 @@ function NavbarComponent({ onToggleSidebar }: NavbarProps) {
 
   // Track auth state to swap Login/Logout
   useEffect(() => {
-    const unsub = onAuthStateChanged(auth, (user) => {
-      setIsAuthed(!!user);
-    });
+    if (!auth) {
+      setIsAuthed(false);
+      return;
+    }
+    const unsub = onAuthStateChanged(auth, (user) => setIsAuthed(!!user));
     return () => unsub();
   }, []);
 
