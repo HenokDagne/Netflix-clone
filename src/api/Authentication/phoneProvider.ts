@@ -3,7 +3,7 @@ import {
   RecaptchaVerifier,
   signInWithPhoneNumber,
 } from "firebase/auth";
-import { auth } from "../../config/firbase";
+import { auth } from "../../config/firebase";
 
 let cachedVerifier: RecaptchaVerifier | null = null;
 let pendingConfirmation: ConfirmationResult | null = null;

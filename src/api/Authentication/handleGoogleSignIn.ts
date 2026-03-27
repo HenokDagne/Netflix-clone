@@ -1,6 +1,6 @@
 import { FirebaseError } from "firebase/app";
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
-import { auth } from "../../config/firbase";
+import { auth } from "../../config/firebase";
 
 const googleProvider = new GoogleAuthProvider();
 

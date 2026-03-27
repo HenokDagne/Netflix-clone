@@ -1,4 +1,4 @@
-import { auth } from "../../config/firbase";
+import { auth } from "../../config/firebase";
 import { FirebaseError } from "firebase/app";
 import { createUserWithEmailAndPassword, updateProfile } from "firebase/auth";
 

@@ -4,7 +4,7 @@ import { useTheme } from "../../context/useTheme";
 import { Link, useSearchParams, useNavigate } from "react-router-dom";
 import { onAuthStateChanged } from "firebase/auth";
 import netflixLogo from "../../assets/netflix.png";
-import { auth } from "../../config/firbase";
+import { auth } from "../../config/firebase";
 import logoutHandler from "../../api/Authentication/logoutHandler";
 
 type NavbarProps = {
